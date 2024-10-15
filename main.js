@@ -69,7 +69,7 @@ Swal.fire({
             
         
         ).then(function(){
-            window.location.href='./FASTSIGN.html'
+            window.location.href='./index.html'
         })
     }
 })
