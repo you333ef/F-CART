@@ -1,0 +1,232 @@
+/* cart.css */
+.container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#COCO .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    text-align: center; /* تخلي المنتج يتوسط */
+}
+#TOTA{
+    justify-content: center !important;
+    align-items: center !important;
+    margin: auto !important;
+ margin-top: 40px !important;
+    text-align: center !important;
+}
+
+#COCO img {
+    width: 100px; /* تصغير حجم الصورة */
+    height: auto;
+}
+
+.cart-item h5 {
+    margin: 0 10px;
+}
+
+.cart-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.cart-buttons button {
+    margin: 0 5px;
+}
+
+.text-right {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    position: relative;
+    right: 0; /* تحريك الـ total على اليمين */
+    top: -50px; /* علشان يكون في مستوى المنتج */
+}
+
+/* ريسبونسيف لشاشات التابلت والموبايل */
+@media (max-width: 768px) {
+    #COCO .cart-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    #COCO img {
+        margin-bottom: 10px;
+    }
+    .text-right {
+        text-align: center;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #COCO img {
+        width: 90px; /* تقليل حجم الصورة للموبايل */
+    }
+    .cart-buttons button {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
+    #TOTA{
+        justify-content: center !important;
+        align-items: center !important;
+        margin: auto !important;
+     margin-top: 40px !important;
+        text-align: center !important;
+    }
+}
+/* cart.css */
+.text-right {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 20px; /* احتفظ بمسافة فوق الـ total */
+    position: static; /* أزل التمركز النسبي علشان يرجع تحت المنتجات */
+    text-align: right; /* خلّيها على اليمين ولكن تحت المنتجات */
+}
+
+/* الريسبونسيف لتحت شاشات الموبايل والتابلت */
+@media (max-width: 768px) {
+    .text-right {
+        text-align: center; /* في الشاشات الصغيرة، خليها تتوسّط */
+    }
+    #TOTA{
+        justify-content: center !important;
+        align-items: center !important;
+        margin: auto !important;
+     margin-top: 40px !important;
+        text-align: center !important;
+    }
+}
+img {
+    width: 100px; /* حجم الصورة */
+}
+.row{
+    align-items: center;
+    display: flex;
+}
+
+#bodyMain{
+    background-color: black;
+    font-family: sans-serif;
+  
+}
+.card-title{
+    font-size: 20px;
+    font-weight: 700;
+}
+.SHOPPP{
+    border: none;
+    background-color: rgb(34, 33, 33);
+    color: aliceblue;
+    outline: none;
+    border-radius: 3px;
+    padding: 6px;
+    font-weight: 700;
+}
+.UP{
+    background-color: aliceblue !important;
+    color: black !important;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 5px;
+    width: 60px;
+    cursor: pointer;
+    z-index: 5000;
+}
+.SHOPPP:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    background-color: black;
+}
+.COCOC:hover,
+.product-image:focus {
+transform: scale(1.05);
+transition: 0.3s;
+z-index: 2000;
+}
+@media (max-width: 575.98px) {
+.COCOC{
+   width: 250px;
+   height: auto;
+   align-items: center;
+   justify-content: center;
+   display: block;
+   margin: auto;
+   
+   
+}}
+#MMM{
+    background-color: rgb(23, 21, 23);
+    color: aliceblue !important;
+    font-size: 18px;
+    font-weight: 700;
+}
+.navbar-brand {
+    color: white !important;
+}
+
+/* تغيير لون الـ Toggle إلى الأبيض */
+.navbar-toggler {
+    border-color: white;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* استعلامات الوسائط لتعديل العرض على الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .form-inline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* تحويل أيقونة cart إلى نص */
+    .fa-cart-plus::before {
+        content: "Cart";
+    }
+
+    /* تحويل أيقونة تسجيل الخروج إلى نص */
+    .fa-right-from-bracket::before {
+        content: "Log out";
+    }
+
+    /* إضافة مسافة بين العناصر */
+    .btn {
+        margin-bottom: 10px;
+    }
+}
+#body_cart{
+    background-color: black;
+    color: #ddd;
+}
+#ICE_COFE{
+    background-color: black;
+}
+#TYITLE{
+    font-size: 17px;
+    font-weight: 700;
+}
+#PYPRICE{
+    font-size: 14px;
+    font-weight: 700;
+}
+#COX{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: auto !important;
+    display: block !important;
+
+}

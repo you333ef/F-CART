@@ -1,0 +1,90 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+}
+
+/* Form Section */
+.section-form {
+    padding: 2rem;
+    text-align: left;
+}
+
+.container-form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title-form {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description-form {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#register-link {
+    font-weight: bold;
+}
+
+.form-label {
+    font-weight: bold;
+    position: relative;
+    padding-left: 30px;
+}
+
+.icon-left {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.btn-primary {
+    background-color: #0C21C1;
+    border-radius: 25px;
+}
+
+.btn-primary:hover {
+    background-color: #0033cc;
+}
+
+.icon-social {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Illustration Section */
+.section-illustration {
+    background-color: #000842;
+}
+
+.section-illustration img {
+    max-width: 90%;
+}
+
+.section-illustration h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.section-illustration p {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+    .section-illustration {
+        display: none;
+    }
+}

@@ -1,0 +1,154 @@
+/* Global Styles */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* To vertically center the content */
+}
+
+/* Form Section */
+.form-section {
+    padding: 4rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mb-3 {
+    position: relative;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    padding-left: 40px; /* space for icons */
+    position: relative;
+}
+
+/* Input Icon Styling */
+.form-label i {
+    position: absolute;
+    left: 5px;
+    top: 70%;
+    transform: translateY(-50%);
+    color: #666;
+    z-index: 2000;
+}
+
+.icon-placeholder {
+    position: absolute;
+    right: 15px; /* adjustable */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* prevents interaction */
+    color: #aaa;
+}
+
+/* Button Styling */
+button, .btn-primary {
+    background-color:0C21C1;
+    border: none;
+    padding: 12px 0;
+    border-radius: 24px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn-primary:hover {
+    background-color: #0033cc;
+}
+
+/* Header and Text Styling */
+#up {
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.If {
+    font-weight: 500;
+}
+
+#smiil {
+    color: #0C21C1;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Image Section */
+.isection {
+    background: #000842;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.isection img {
+    width: 300px;
+    margin-bottom: 1rem;
+}
+
+.isection h2 {
+    font-size: 2rem;
+}
+
+.isection p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .isection {
+        display: none; /* Hide image section on mobile */
+    }
+
+    .form-section {
+        padding: 2rem; /* Increase padding on mobile */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container {
+        max-width: 90%; /* Make the form take more width on mobile */
+    }
+
+    .btn-primary {
+        border-radius: 30px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .isection h2 {
+        font-size: 1.5rem;
+    }
+    .isection {
+        display: none; /* Hide image section on mobile */
+    }
+    .isection img {
+        width: 200px;
+    }
+
+    .form-container {
+        max-width: 80%; /* Make form wider on tablet */
+    }
+    
+}
+
