@@ -8,7 +8,7 @@ let PAPA_ARRAY = JSON.parse(localStorage.getItem('INFODATA')) || [];
 
 // فقط إعادة التوجيه إذا كان المستخدم مسجل
 if (PAPA_ARRAY.length > 0) {
-   window.location='./index.html';
+   window.location='./FAST.html';
 }
 
 submit.onclick = function(event) {
